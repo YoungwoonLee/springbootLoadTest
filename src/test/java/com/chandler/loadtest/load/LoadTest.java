@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 import com.chandler.loadtest.uat.UatTest;
 
 // test할 클래스와 메소드를 지정하기 위한 애노테이션
-@TestMapping(testClass = UatTest.class, testMethod = "should_get_google_com")
+//@TestMapping(testClass = UatTest.class, testMethod = "shouldGetGoogleCom")
+@TestMapping(testClass = UatTest.class, testMethod = "uniqIdTest")
 // 부하를 주기위한(쓰레드) 
 @LoadWith("loadtest.properties")
 // zero code load runner실행 애노테이션
